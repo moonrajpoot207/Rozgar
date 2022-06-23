@@ -1,0 +1,39 @@
+// SalePoint Login
+@import "./salepoint/salepointlogin/salepoint";
+@import "./salepoint/salepointlogin/salepoint_contact";
+
+
+// Admin SalePoint
+@import "./salepoint/adminsalepoint/adminsalepoint_nav";
+
+
+// Add Sale Point
+@import "./salepoint/addsalepoint/addsalepoint_secondSection";
+
+
+// User Sale Point
+@import "./salepoint/usersalepointowner/user_salepoint_owner_thirdSection";
+
+
+// View All Orders
+@import "./salepoint/salepointviewallorders/salepoint_view_all_orders_secondSection";
+
+
+// Add Order Record
+@import "./salepoint/addorderrecord/add_order_record_secondSection";
+
+
+// All Expenses Record
+@import "./salepoint/allexpensesrecord/salepoint_all_expenses_record";
+
+
+// Add Expenses Record
+@import "./salepoint/addexpense/salepoint_add_expense_secondSection";
+
+
+// Add Payment Record
+@import "./salepoint/addpaymentrecord/add_payment_record_secondSection";
+
+
+// Request Advance Payment
+@import "./salepoint/requestadvancepayment/request_advance_payment_secondSection";

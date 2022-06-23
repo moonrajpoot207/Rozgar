@@ -1,0 +1,159 @@
+.uspo-thirdSection{
+    padding-bottom:100px !important;
+}
+.uspo-thirdSection .container .before-table{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.uspo-thirdSection .container .before-table .heading h5{
+    font-weight:700;
+    margin-bottom: 5px;
+}
+.uspo-thirdSection .container .before-table .heading-2 a{
+    font-size: 15px;
+    text-decoration: underline;
+}
+// TABLE SECTION STYLING START
+.uspo-thirdSection .container .table .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.uspo-thirdSection .container .table .content h6{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+// TABLE STYLING START
+.uspo-thirdSection .container .table table thead tr th:nth-child(1){
+    font-weight: 400;
+    color: #111;
+    text-align: center;
+}
+.uspo-thirdSection .container .table table tbody tr:nth-child(6){
+    box-shadow: none;
+}
+.uspo-thirdSection .container .table table tbody tr td:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+.uspo-thirdSection .container .table table tbody tr td:nth-child(2){
+    width: 30%;
+}
+.uspo-thirdSection .container .table table tbody tr td:nth-child(3){
+    width: 25%;
+}
+.uspo-thirdSection .container .table table tbody tr td:nth-child(4){
+    width: 40%;
+}
+
+@media (max-width: 575px){
+.uspo-thirdSection{
+    padding: 20px 20px 50px !important;
+    overflow: hidden;
+}
+.uspo-thirdSection .before-table{
+    display: block !important;
+}
+.uspo-thirdSection .before-table .heading-2{
+    text-align: end;
+}
+.uspo-thirdSection .container .table .content{
+    display: block;
+    width: 100%;
+}
+.uspo-thirdSection .container .table .content .btn{
+    margin-right: 0px;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}
+.uspo-thirdSection .container .table table tbody tr{
+    height: 400px;
+}
+.uspo-thirdSection .container .table table tbody tr td{
+    height: 100px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+.uspo-thirdSection{
+    padding: 20px 40px 60px !important;
+}
+.uspo-thirdSection .container .table table tbody tr{
+    height: 280px;
+    padding: 0px 10px;
+}
+.uspo-thirdSection .container .table table tbody tr td{
+    height: 70px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.uspo-thirdSection{
+    padding: 20px 60px 80px !important;
+}
+.uspo-thirdSection .container .table table tbody tr{
+    height: 280px;
+    padding: 0px 10px;
+}
+.uspo-thirdSection .container .table table tbody tr td{
+    height: 70px;
+}
+}
+
+// Common Media Queries
+@media (max-width: 991px){
+.uspo-thirdSection .container .table{
+    padding: 20px 0px 20px;
+}
+.uspo-thirdSection .container .table table thead{
+    display: none;
+}
+.uspo-thirdSection .container .table table{
+    padding: 0px;
+}
+.uspo-thirdSection .container .table table,
+.uspo-thirdSection .container .table table tbody,
+.uspo-thirdSection .container .table table tbody tr,
+.uspo-thirdSection .container .table table tbody tr td{
+    display: block;
+}
+.uspo-thirdSection .container .table table tbody tr td:nth-child(1),
+.uspo-thirdSection .container .table table tbody tr td:nth-child(2),
+.uspo-thirdSection .container .table table tbody tr td:nth-child(3),
+.uspo-thirdSection .container .table table tbody tr td:nth-child(4){
+    width: 100%;
+    text-align: right;
+}
+.uspo-thirdSection .container .table table tbody tr{
+    margin-bottom: 25px;
+    box-shadow: unset;
+    background: #fff;
+    border: 1px solid red;
+}
+.uspo-thirdSection .container .table table tbody tr td{
+    box-shadow: 0px 3px 8px -8px black;
+    padding-left: 50%;
+    position: relative;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.uspo-thirdSection .container .table table tbody tr td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+.uspo-thirdSection .container .table table tbody tr td:nth-child(4){
+    box-shadow: none;
+}
+}

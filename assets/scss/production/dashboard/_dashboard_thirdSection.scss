@@ -1,0 +1,145 @@
+.db-thirdSection{
+    padding-bottom:100px !important;
+}
+.db-thirdSection .container > h5{
+    font-weight:700;
+    margin-bottom: 5px;
+}
+// TABLE SECTION STYLING START
+.db-thirdSection .container .table .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.db-thirdSection .container .table .content h6{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+// TABLE STYLING START
+.db-thirdSection .container .table table thead tr th:nth-child(1){
+    font-weight: 400;
+    color: #111;
+    text-align: center;
+}
+.db-thirdSection .container .table table tbody tr:nth-child(6){
+    box-shadow: none;
+}
+.db-thirdSection .container .table table tbody tr td:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+.db-thirdSection .container .table table tbody tr td:nth-child(2){
+    width: 30%;
+    font-size: 13px;
+}
+.db-thirdSection .container .table table tbody tr td:nth-child(3){
+    width: 25%;
+}
+.db-thirdSection .container .table table tbody tr td:nth-child(4){
+    width: 40%;
+}
+
+@media (max-width: 575px){
+.db-thirdSection{
+    padding: 20px 20px 50px !important;
+    overflow: hidden;
+}
+.db-thirdSection .container .table .content{
+    display: block;
+    width: 100%;
+}
+.db-thirdSection .container .table .content .btn{
+    margin-right: 0px;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}
+.db-thirdSection .container .table table tbody tr{
+    height: 400px;
+}
+.db-thirdSection .container .table table tbody tr td{
+    height: 100px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+.db-thirdSection{
+    padding: 20px 40px 60px !important;
+}
+.db-thirdSection .container .table table tbody tr{
+    height: 280px;
+    padding: 0px 10px;
+}
+.db-thirdSection .container .table table tbody tr td{
+    height: 70px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.db-thirdSection{
+    padding: 20px 60px 80px !important;
+}
+.db-thirdSection .container .table table tbody tr{
+    height: 280px;
+    padding: 0px 10px;
+}
+.db-thirdSection .container .table table tbody tr td{
+    height: 70px;
+}
+}
+
+// Common Media Queries
+@media (max-width: 991px){
+.db-thirdSection .container .table{
+    padding: 20px 0px 20px;
+}
+.db-thirdSection .container .table table thead{
+    display: none;
+}
+.db-thirdSection .container .table table{
+    padding: 0px;
+}
+.db-thirdSection .container .table table,
+.db-thirdSection .container .table table tbody,
+.db-thirdSection .container .table table tbody tr,
+.db-thirdSection .container .table table tbody tr td{
+    display: block;
+}
+.db-thirdSection .container .table table tbody tr td:nth-child(1),
+.db-thirdSection .container .table table tbody tr td:nth-child(2),
+.db-thirdSection .container .table table tbody tr td:nth-child(3),
+.db-thirdSection .container .table table tbody tr td:nth-child(4){
+    width: 100%;
+    text-align: right;
+}
+.db-thirdSection .container .table table tbody tr{
+    margin-bottom: 25px;
+    box-shadow: unset;
+    background: #fff;
+    border: 1px solid red;
+}
+.db-thirdSection .container .table table tbody tr td{
+    box-shadow: 0px 3px 8px -8px black;
+    padding-left: 50%;
+    position: relative;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.db-thirdSection .container .table table tbody tr td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+.db-thirdSection .container .table table tbody tr td:nth-child(4){
+    box-shadow: none;
+}
+}

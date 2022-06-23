@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/scss/main.css">
+</head>
+<body>
+    <!-- Nav Section Start -->
+    <nav>
+        <div class="login-nav-bar">
+            <h3>Rozgar.</h3>
+        </div>
+    </nav>
+    <!-- Nav Section End -->
+
+    <!-- Second Section Start -->
+    <section class="login-section common-section">
+        <div class="container common-container">
+            <h1>Login</h1>
+            <div class="form">
+                <form method="get" id="get_form">
+                    <div class="heading">
+                        <h4>Login as</h4>
+                    </div>
+                    <div class="login-options">
+                        <div class="boxes">
+                            <div class="box box-1" id="loginTab">
+                                <h6>Investor</h6> <input type="radio" class="loginRadio" name="radioType" value="Investor" id="radio_url" data-page-url="./investment/investment.html">
+                            </div>
+                            <div class="box box-2"  id="loginTab">
+                                <h6>Sales point owner</h6> <input type="radio" class="loginRadio" name="radioType" value="Sales Point Owner" id="radio_url" data-page-url="./salespoint/salepoint-login.html">
+                            </div>
+                            <div class="box box-3"  id="loginTab">
+                                <h6>Production House</h6> <input type="radio" class="loginRadio" name="radioType" value="Production House" id="radio_url" data-page-url="./production/dashboard.html">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="form-rows">
+                            <div class="row-item">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="row-item">
+                                <label for="pass">Password</label>
+                                <input type="text" id="pass" name="password" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn" id="buttonLogin"><button>Login</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Second Section End -->
+    <script src="./assets/js/login/login/loginAs.js"></script>
+</body>
+</html>

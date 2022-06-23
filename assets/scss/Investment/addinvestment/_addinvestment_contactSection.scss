@@ -1,0 +1,124 @@
+.ai-contactSection{
+    padding-bottom: 202px !important;
+}
+.ai-contactSection .container form{
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    color: #111;
+    max-width: 550px;
+}
+.ai-contactSection .container{
+    display: flex;
+    justify-content: center;
+}
+.ai-contactSection .container form h3{
+    color: #111;
+    text-align: start;
+    margin: 0px 0px 20px 0px;
+    font-size: 30px;
+    text-align: center;
+}
+.ai-contactSection form .form-rows{
+    grid-template-columns: repeat(2, 1fr);
+}
+.ai-contactSection form :is(.row-item-email, .row-item-desc){
+    grid-column: 1/3;
+}
+.ai-contactSection .container form :is(input, textarea){
+    width: 100%;
+    height: 35px;
+    margin: 3px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.04);
+    outline: 0;
+    border-bottom:2px solid #111;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 15px;
+}
+.ai-contactSection .container form textarea{
+    height: 150px;
+}
+.ai-contactSection .container form label{
+    font-size: 13px !important;
+}
+// .ai-contactSection .container form .btn{
+//     pointer-events: none;
+//     a{
+//         color: #fff;
+//     }
+// }
+
+
+// Media Queries
+@media (max-width: 575px){
+.ai-contactSection{
+    padding: 40px 20px !important;
+    overflow: hidden;
+}
+.ai-contactSection .container form{
+    padding: 30px 0px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+.ai-contactSection{
+    padding: 40px 40px !important;
+}
+.ai-contactSection .container form{
+    padding: 50px 0px;
+    max-width: 75%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.ai-contactSection{
+    padding: 40px 60px !important;
+}
+.ai-contactSection .container{
+    display: flex;
+    justify-content: center;
+}
+.ai-contactSection .container form{
+    padding: 40px;
+    position: relative;
+    max-width: 75%;
+}
+.ai-contactSection .container form h3{
+    font-size: 30px;
+}
+.ai-contactSection form .form-rows{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 30px;
+}
+}
+
+
+// Common Media Queries
+@media (max-width: 767px){
+.ai-contactSection .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ai-contactSection .container form{
+    margin-left: 0px;
+}
+.ai-contactSection .container form h3{
+    font-size: 25px;
+}
+.ai-contactSection form .form-rows{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media (max-width: 991px){
+.ai-contactSection .container form{
+    width: 100%;
+    background-color: #fff;
+    color: #111;
+}
+}

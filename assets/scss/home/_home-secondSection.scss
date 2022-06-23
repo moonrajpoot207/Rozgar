@@ -1,0 +1,111 @@
+.home-secondSection{
+    padding: 20px 80px;
+    margin-bottom: 80px;
+}
+.home-secondSection .container .boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.home-secondSection .container .boxes p{
+    font-size: 14px;
+}
+.home-secondSection .container .boxes .box{
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    position: relative;
+}
+.home-secondSection .container .boxes .box::before{
+    content: attr(data-number);
+    width: 100%;
+    height: 100%;
+    top: -10%;
+    left: 0px;
+    position: absolute;
+    font-size: 80px;
+    font-weight: 700;
+    transform: translateX(25%);
+    opacity: 0.13;
+}
+.home-secondSection .container .boxes .box p:nth-child(1){
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.home-secondSection .container .boxes .box p:nth-child(2){
+    opacity: 0.7;
+}
+
+// Media Queries
+@media (max-width: 575px){
+.home-secondSection{
+    overflow: hidden;
+}
+.home-secondSection .container .boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.home-secondSection .container .boxes .box::before{
+    left: 13%;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+.home-secondSection .container .boxes .box::before{
+    left: 17%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.home-secondSection .container .boxes .box::before{
+    left: 15%;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+.home-secondSection .container .boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.home-secondSection .container .boxes .box::before{
+    left: 25%;
+}
+}
+
+
+// Common Media Queries
+@media (max-width: 767px){
+.home-secondSection{
+    padding: 20px 20px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 991px){
+.home-secondSection .container .boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+.home-secondSection{
+    padding: 20px 40px;
+}
+}
+
+@media (max-width: 1199px){
+.home-secondSection .container .boxes .box::before{
+    content: attr(data-number);
+    width: 0;
+    height: 0;
+    top: -10%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 80px;
+    font-weight: 700;
+    opacity: 0.13;
+}
+}

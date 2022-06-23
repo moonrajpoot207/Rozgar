@@ -1,0 +1,35 @@
+// Add Investment
+@import "./investment/addinvestment/_addinvestment_contactSection";
+
+
+// Admin Investment
+@import "./investment/admininvestment/_adminInvestment_nav";
+@import "./investment/admininvestment/_adminInvestment_secondSection";
+
+
+// ViewSalePoint
+@import "./investment/viewsalepoint/_viewsalepoint_nav";
+
+
+// User Investor
+@import "./investment/userinvestor/_userinvestor_footer";
+
+
+// Investment
+@import "./investment/investment/_investment_nav";
+@import "./investment/investment/_investment_hero";
+@import "./investment/investment/_investment_form";
+@import "./investment/investment/_investment_footer";
+
+
+// User Investor
+@import "./investment/userinvestor/_user_investor_nav";
+@import "./investment/userinvestor/_user_investor_secondSection";
+@import "./investment/userinvestor/_investor_thirdSection";
+@import "./investment/userinvestor/_userinvestor_footer";
+
+
+// View Sale Point
+@import "./investment/viewsalepoint/_viewsalepoint_nav";
+@import "./investment/viewsalepoint/_viewsalepoint_secondSection";
+@import "./investment/viewsalepoint/_viewsalepoint_thirdSection";

@@ -1,0 +1,137 @@
+.vo1-secondSection{
+    padding-bottom: 215px !important;
+}
+.vo1-secondSection .container .box{
+    width: 100%;
+    height: 100%;
+    max-width: 50%;
+    background-color: #fff;
+    margin: 0px auto;
+    padding: 30px 30px;
+}
+.vo1-secondSection .container .box .content{
+    text-align: center;
+}
+.vo1-secondSection .container .box .content h5{
+    font-weight: 700;
+}
+.vo1-secondSection .container .box .content .img img{
+    width: 180px;
+    border-radius: 100px;
+    border: 0.5px solid #111;
+    margin: 30px 0px;
+}
+.vo1-secondSection .container .box form .form-rows{
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px 20px;
+}
+.vo1-secondSection .container .box form .form-rows .row-item label{
+    font-weight: normal;
+}
+.vo1-secondSection .container .box form .form-rows .row-item input{
+    padding-left: 29px;
+    font-size: 13px;
+}
+.vo1-secondSection .container .box form .form-rows .row-item:nth-child(2) label {
+    position: relative;
+}
+.vo1-secondSection .container .box form .form-rows .row-item:nth-child(2) label span:nth-child(1) svg{
+    position: absolute;
+    top: 43px;
+    right: 3px;
+    opacity: 0.5;
+}
+.vo1-secondSection .container .box form .form-rows .row-item:nth-child(2) label span:nth-child(2) svg{
+    position: absolute;
+    top: 23px;
+    right: 3px;
+    opacity: 0.5;
+}
+.vo1-secondSection .container .box form .form-rows .row-item:nth-child(3){
+    grid-column: 1/3;
+}
+.vo1-secondSection .container .box form .form-rows .row-item:nth-child(3) input{
+    background-color: #fff;
+    padding-left: 5px;
+    border: solid 1px #dcdcdc;
+    padding-top: 6px;
+}
+.vo1-secondSection .container .box form .form-rows .row-item:nth-child(3) label{
+    padding-left: 5px;
+    font-weight: 500;
+}
+.vo1-secondSection .container .box form input[type="file"]::file-selector-button{
+    background-color: #dcdcdc;
+    padding: 6px;
+    outline: none;
+    border-radius: 3px;
+    border: solid 1px #a2a2a2;
+    background-image: linear-gradient(to bottom, #efefef, #bcbcbc);
+}
+
+
+
+
+@media (max-width: 575px){
+.vo1-secondSection{
+    padding: 50px 20px 120px !important;
+    overflow: hidden;
+}
+.vo1-secondSection .container .box{
+    max-width: 100%;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+.vo1-secondSection{
+    padding: 50px 40px 120px !important;
+}
+.vo1-secondSection .container .box{
+    max-width: 80%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.vo1-secondSection{
+    padding: 50px 60px 150px !important;
+}
+.vo1-secondSection .container .box{
+    max-width: 80%;
+}
+.vo1-secondSection .container .box form .form-rows{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px 20px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+.vo1-secondSection .container .box{
+    max-width: 70%;
+    padding: 30px 30px;
+}
+}
+
+
+// Common Media Queries
+@media (max-width: 767px){
+.vo1-secondSection .container .box form .form-rows{
+    display: flex;
+    flex-direction: column;
+}
+.vo1-secondSection .container .box form .form-rows .row-item label{
+    margin-bottom: 4px;
+}
+}
+
+@media (max-width: 991px){
+.vo1-secondSection .container .box{
+    padding: 30px 20px;
+}
+.vo1-secondSection .container .box .content .img img{
+    width: 150px;
+}
+.vo1-secondSection .container .box form .form-rows .row-item input{
+    padding-left: 15px;
+}
+}

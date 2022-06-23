@@ -1,0 +1,200 @@
+// Button Tags Start
+.accepted{
+    padding: 2px 4px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #3bbb47;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    &:hover{
+    color: #3bbb47;
+    background-color: #fff;
+    border: 1px solid #3bbb47;
+    transition: all 0.3s ease;
+    }
+}
+.pending{
+    @extend .accepted;
+    font-size: 11px;
+    background-color: #e9b423;
+    &:hover{
+    color: #e9b423;
+    background-color: #fff;
+    border: 1px solid #e9b423;
+    transition: all 0.3s ease;
+    }
+}
+// Button Tags End
+
+
+.vao-second-section{
+    padding-bottom: 200px !important;
+}
+.vao-second-section .container{
+    background-color: #fff;
+}
+.vao-second-section .container .container-content{
+    height: 70px;
+    box-shadow: 0px 3px 8px -8px black;
+    display: flex;
+    place-items: center;
+}
+.vao-second-section .container .container-content h5{
+    font-weight: 700;
+    margin-left: 20px;
+}
+.vao-second-section .container .table{
+    margin-top: 1px;
+}
+.vao-second-section .container .table table thead th:nth-child(1),
+.vao-second-section .container .table table thead th:nth-child(4),
+.vao-second-section .container .table table thead th:nth-child(5),
+.vao-second-section .container .table table thead th:nth-child(6){
+    text-align: start;
+    font-weight: normal;
+}
+.vao-second-section .container .table table thead th:nth-child(2){
+    text-align: end;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(1){
+    width: 5%;
+    text-align: start;
+    font-size: 12px;
+    font-weight: 500;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(2){
+    width: 10%;
+    font-size: 15px;
+    text-align: center;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(3){
+    width: 20%;
+    font-size: 15px;
+    font-weight: 700;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(4){
+    width: 35%;
+    font-size: 15px;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(5){
+    width: 5%;
+    font-size: 15px;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(6){
+    width: 15%;
+    font-size: 15px;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(7){
+    width: 5%;
+    font-size: 15px;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(8){
+    width: 5%;
+    font-size: 15px;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(2) img{
+    width: 40px;
+    border-radius: 23px;
+}
+.vao-second-section .container .table table a{
+    color: #2c6ecb;
+}
+
+@media (max-width: 575px){
+.vao-second-section{
+    padding: 40px 20px !important;
+}
+.vao-second-section .container table{
+    padding: 0px;
+}
+.vao-second-section .container table tbody tr{
+    height: 800px;
+}
+.vao-second-section .container table tbody tr td{
+    height: 100px;
+}
+.vao-second-section .container table tbody tr td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+}
+
+@media (min-width: 576px) and (max-width: 991px){
+.vao-second-section{
+    padding: 25px 50px !important;
+}
+.vao-second-section .container .table table tbody tr{
+    height: 480px;
+    border-radius: 5px;
+}
+.vao-second-section .container .table table tbody tr td{
+    height: 60px;
+}
+.vao-second-section .container .table table tbody tr td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 14px;
+    text-align: left;
+}
+}
+
+// Common Media Queries
+@media(max-width: 991px){
+.vao-second-section .container table thead{
+    display: none;
+}
+.vao-second-section .container table,
+.vao-second-section .container table tbody,
+.vao-second-section .container table tbody tr,
+.vao-second-section .container table tbody tr td{
+    display: block;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(1),
+.vao-second-section .container .table table tbody tr td:nth-child(2),
+.vao-second-section .container .table table tbody tr td:nth-child(3),
+.vao-second-section .container .table table tbody tr td:nth-child(4),
+.vao-second-section .container .table table tbody tr td:nth-child(5),
+.vao-second-section .container .table table tbody tr td:nth-child(6),
+.vao-second-section .container .table table tbody tr td:nth-child(7),
+.vao-second-section .container .table table tbody tr td:nth-child(8){
+    width: 100%;
+}
+.vao-second-section .container .table table tbody tr td:nth-child(8){
+    box-shadow: none;
+}
+.vao-second-section .container table tbody tr{
+    margin-bottom: 25px;
+    box-shadow: unset;
+    background: #fff;
+    border: 1px solid red;
+}
+.vao-second-section .container table tbody tr td{
+    box-shadow: 0px 3px 8px -8px black;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.vao-second-section .container table tbody tr td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+}

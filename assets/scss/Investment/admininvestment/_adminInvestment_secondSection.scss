@@ -1,0 +1,232 @@
+.ai-second--section{
+    padding-bottom: 145px !important;
+}
+.ai-second--section .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ai-second--section .container .content h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
+    text-transform: capitalize;
+}
+.ai-second--section .container .content .button-2{
+    background: #059669;
+    color: #fff;
+    border: 1px solid transparent;
+    &:hover{
+    background: #fff;
+    color: #059669;
+    border: 1px solid #059669;
+    }
+    a{
+        color: #fff;
+        &:hover{
+            color: #059669;
+        }
+    }
+}
+.ai-second--section .container h5{
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin:  20px 0px 2px 20px;
+}
+.ai-second--section .container .table{
+    padding: 0px;
+}
+.ai-second--section .container .table table thead tr th:nth-child(1){
+    color: #111;
+    text-align: center;
+    font-weight: normal;
+}
+.ai-second--section .container .table table tbody tr td{
+    font-size: 14px;
+}
+.ai-second--section .container .table table tbody tr td:nth-child(1){
+    width: 5%;
+    font-size: 16px;
+    text-align: center;
+}
+.ai-second--section .container .table table tbody tr td:nth-child(2){
+    width: 10%;
+}
+.ai-second--section .container .table table tbody tr td:nth-child(3){
+    width: 20%;
+}
+.ai-second--section .container .table table tbody tr td:nth-child(4){
+    width: 10%;
+}
+.ai-second--section .container .table table tbody tr td:nth-child(5){
+    width: 38%;
+}
+.ai-second--section .container .table table tbody tr td:nth-child(5) a{
+    text-decoration: underline;
+    color: #407bf1;
+    &:hover{
+    color: red;
+    transition: all 0.3s ease;
+    }
+}
+.ai-second--section .container .table table tbody tr td:nth-child(6){
+    width: 10%;
+    text-align: center;
+}
+.ai-second--section .container .table table tbody .btn button span svg{
+    margin-right: 6px;
+    fill: #059669;
+}
+.ai-second--section .container .table table tbody .btn button:hover span svg{
+    fill: #fff;
+    transition: all 0.3s ease;
+}
+.ai-second--section .container .table table tbody .btn button{
+    padding: 4px 8px;
+    border-radius: 2px;
+    border: 1px solid #d5d5d5;
+    color: #059669;
+    font-size: 13px;
+    &:hover{
+    color: #fff;
+    background: #059669;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    }
+}
+//Model Box
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  .modal-content h5{
+    padding-bottom: 10px;
+    font-weight: 700 !important;
+    margin-left: 0px !important;
+  }
+  .modal-content p{
+    margin-top: 20px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+// Media Queries
+@media (max-width: 575px){
+.ai-second--section{
+    padding: 25px 20px !important;
+    overflow: hidden;
+}
+.ai-second--section .container .content{
+    display: block;
+}
+.ai-second--section .container .content h5{
+    margin-bottom: 10px;
+}
+.ai-second--section .container table tbody tr{
+    height: 600px;
+}
+.ai-second--section .container .table table tr td{
+    height: 100px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 991px){
+.ai-second--section{
+    padding: 25px 50px !important;
+}
+.ai-second--section .container table tbody tr{
+    height: 360px;
+}
+.ai-second--section .container table tbody tr td{
+    height: 60px;
+}
+}
+
+
+// Common Media Queries
+@media (max-width: 991px){
+.ai-second--section .container h5{
+    margin:  20px 0px 5px 20px;
+}
+.ai-second--section .container table thead{
+    display: none;
+}
+.ai-second--section .container table,
+.ai-second--section .container table tbody,
+.ai-second--section .container table tbody tr,
+.ai-second--section .container table tbody tr td{
+    display: block;
+}
+.ai-second--section .container table tbody tr{
+    margin-bottom: 25px;
+    box-shadow: unset;
+    background: #fff;
+    border: 0.5px solid red;
+    border-radius: 5px;
+}
+.ai-second--section .container .table table tr td{
+    box-shadow: 0px 3px 8px -8px black;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.ai-second--section .container .table table tbody tr td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+.ai-second--section .container .table table tbody tr td:nth-child(1),
+.ai-second--section .container .table table tbody tr td:nth-child(2),
+.ai-second--section .container .table table tbody tr td:nth-child(3),
+.ai-second--section .container .table table tbody tr td:nth-child(4),
+.ai-second--section .container .table table tbody tr td:nth-child(5),
+.ai-second--section .container .table table tbody tr td:nth-child(6){
+    width: 100%;
+}
+.ai-second--section .container .table table tbody tr td:nth-child(6){
+    box-shadow: none;
+}
+}

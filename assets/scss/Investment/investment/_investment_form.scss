@@ -1,0 +1,157 @@
+.second-section{
+    width: 100%;
+    position: relative;
+    padding: 100px 0px;
+}
+.second-section .container{
+    height: 100%;
+}
+.second-section .container .images{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.second-section .container .images::before{
+    content: "";
+    background: #111;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+}
+.second-section .container .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.second-section .container .images img:last-child{
+    max-width: 40%;
+}
+.second-section .container form{
+    width: 100%;
+    padding: 62px 63px 64px 64px;
+    background: #19513f;
+    color: #fff;
+    position: relative;
+    max-width: 640px;
+    margin-left: 10%;
+}
+.second-section .container form h3{
+    color: #fff;
+    text-align: start;
+    margin: 0px 0px 20px 0px;
+    font-size: 30px;
+}
+.second-section form .form-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.second-section form :is(.form-item-email, .form-item-desc){
+    grid-column: 1/3;
+}
+.second-section .container form :is(input, textarea){
+    width: 100%;
+    height: 35px;
+    margin: 2px 63px 23px 1px;
+    background-color: rgba(255, 255, 255, 0.04);
+    outline: 0;
+    border-bottom:2px solid #fff;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 15px;
+}
+.second-section .container form textarea{
+    height: 150px;
+}
+.second-section .container form label{
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "ubuntu", "sans-serif";
+}
+.second-section .container form p{
+    font-size: 14px;
+    font-weight: normal;
+}
+.second-section .container form p a{
+    color: #fff;
+    text-decoration: underline;
+}
+.second-section .container form button{
+    width: 100%;
+    height: 45px;
+    background: #059669;
+    border: none;
+    color: #fff;
+    margin-top: 45px;
+    text-transform: uppercase;
+    a{
+        color: #fff;
+    }
+}
+
+// Media Queries
+@media (min-width: 768px) and (max-width: 991px){
+.second-section .container form h3{
+    font-size: 30px;
+}
+.second-section form .form-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+.second-section .container .images img:first-child{
+    max-width: 60%;
+}
+}
+
+
+// Common Media Queries
+@media (max-width: 767px){
+.second-section .container form h3{
+    font-size: 25px;
+}
+.second-section form .form-row{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media (max-width: 991px){
+.second-section .container .images{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.second-section .container .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.second-section .container .images img:last-child{
+    display: none;
+    max-width: 0px;
+}
+.second-section .container form{
+    width: 100%;
+    padding: 42px 43px 44px 44px;
+    background: #19513f;
+    color: #fff;
+    position: relative;
+    max-width: 83%;
+    margin-left: 10%;
+}
+}

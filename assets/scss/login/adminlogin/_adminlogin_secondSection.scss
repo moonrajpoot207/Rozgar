@@ -1,0 +1,71 @@
+.adminlogin-secondSection{
+    min-height: 100vh;
+}
+.adminlogin-secondSection .container{
+    max-width: 70%;
+    background-color: #fafafa;
+}
+.adminlogin-secondSection .container h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.adminlogin-secondSection .container .form form{
+    background-color: white;
+    padding: 65px;
+    border: 1px solid #065f46;
+}
+.adminlogin-secondSection .container .form form .heading h4{
+    text-align: start;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.adminlogin-secondSection .container .form form .input .form-rows{
+    grid-template-columns: 1fr;
+}
+
+
+// Media Queries
+@media (max-width: 575px){
+.adminlogin-secondSection{
+    padding: 40px 20px !important;
+    overflow: hidden;
+}
+.adminlogin-secondSection .container{
+    max-width: 100%;
+}
+.adminlogin-secondSection .container .form form{
+    padding: 10px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+.adminlogin-secondSection{
+    padding: 40px 40px !important;
+}
+.adminlogin-secondSection .container{
+    max-width: 80%;
+}
+.adminlogin-secondSection .container .form form{
+    padding: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.adminlogin-secondSection{
+    padding: 40px 60px !important;
+}
+.adminlogin-secondSection .container{
+    max-width: 80%;
+}
+.adminlogin-secondSection .container .form form{
+    padding: 20px;
+}
+}
+
+
+// Common Media Queries
+@media (max-width: 991px){
+.adminlogin-secondSection .container{
+    padding: 0px;
+}
+}

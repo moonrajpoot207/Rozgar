@@ -1,0 +1,126 @@
+.addsp-contactSection{
+    padding-bottom: 202px !important;
+}
+.addsp-contactSection .container form{
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    color: #111;
+    max-width: 550px;
+}
+.addsp-contactSection .container{
+    display: flex;
+    justify-content: center;
+}
+.addsp-contactSection .container form h5{
+    color: #111;
+    margin: 0px 0px 40px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.addsp-contactSection form .form-rows{
+    grid-template-columns: repeat(2, 1fr);
+}
+.addsp-contactSection form .row-item-email,
+.addsp-contactSection form div:nth-child(6){
+    grid-column: 1/3;
+}
+.addsp-contactSection form div:nth-child(4) label,
+.addsp-contactSection form div:nth-child(6) label{
+    position: relative;
+}
+.addsp-contactSection form div:nth-child(4) label span svg,
+.addsp-contactSection form div:nth-child(6) label span svg{
+    position: absolute;
+    top: 33px;
+    right: 3px;
+    opacity: 0.5;
+}
+.addsp-contactSection .container form input{
+    width: 100%;
+    height: 35px;
+    margin: 3px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.04);
+    outline: 0;
+    border-bottom:2px solid #111;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 15px;
+}
+.addsp-contactSection .container form label{
+    font-size: 13px !important;
+}
+
+
+// Media Queries
+@media (max-width: 575px){
+.addsp-contactSection{
+    padding: 40px 20px !important;
+    overflow: hidden;
+}
+.addsp-contactSection .container form{
+    padding: 30px 0px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+.addsp-contactSection{
+    padding: 40px 40px !important;
+}
+.addsp-contactSection .container form{
+    padding: 50px 0px;
+    max-width: 75%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.addsp-contactSection{
+    padding: 40px 60px !important;
+}
+.addsp-contactSection .container{
+    display: flex;
+    justify-content: center;
+}
+.addsp-contactSection .container form{
+    padding: 40px;
+    max-width: 75%;
+}
+.addsp-contactSection .container form h3{
+    font-size: 30px;
+}
+.addsp-contactSection form .form-rows{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 30px;
+}
+}
+
+
+// Common Media Queries
+@media (max-width: 767px){
+.addsp-contactSection .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addsp-contactSection .container form{
+    margin-left: 0px;
+}
+.addsp-contactSection .container form h3{
+    font-size: 25px;
+}
+.addsp-contactSection form .form-rows{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media (max-width: 991px){
+.addsp-contactSection .container form{
+    width: 100%;
+    background-color: #fff;
+    color: #111;
+}
+}

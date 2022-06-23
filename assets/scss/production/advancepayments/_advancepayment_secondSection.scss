@@ -1,0 +1,211 @@
+// Buttons Styling
+.adp-pending{
+    padding: 2px;
+    background-color: #a2a2a2;
+    color: #fff;
+    border: 1px solid transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+    &:hover{
+        background-color: #a2a2a2;
+    }
+}
+.adp-Acknow{
+    @extend .adp-pending;
+    background-color: #64a26a;
+    &:hover{
+        background-color: #64a26a;
+    }
+}
+.adp-reject{
+    @extend .adp-pending;
+    background-color: #ff6c6c;
+    &:hover{
+        background-color: #ff6c6c;
+    }
+}
+
+
+// Section Styling Start
+.adp-secondSection{
+    padding-bottom:160px !important;
+}
+.adp-secondSection .container .table .content h5{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+// Table Styling Start
+
+// Table Thead Styling
+.adp-secondSection .container .table table thead tr th:nth-child(1){
+    text-align: center;
+    color: #111;
+    font-weight: normal;
+}
+// Table Tbody Styling
+.adp-secondSection .container .table table tbody tr:nth-child(6){
+    box-shadow: none;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(2){
+    width: 20%;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(3){
+    width: 25%;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(4){
+    width: 33%;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(5){
+    width: 7%;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(6){
+    width: 10%;
+}
+.adp-secondSection .container .table table .reject{
+    color: #cb2c2c;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.adp-secondSection .container .table table .acknowledge{
+    @extend .reject;
+    color: #26831f;
+}
+
+
+
+
+@media (max-width: 575px){
+.adp-secondSection{
+    padding: 20px 20px 100px !important;
+    overflow: hidden;
+}
+.adp-secondSection .container .table{
+    padding: 20px 0px 20px;
+}
+.adp-secondSection .container .table table thead{
+    display: none;
+}
+.adp-secondSection .container .table table,
+.adp-secondSection .container .table table tbody,
+.adp-secondSection .container .table table tbody tr,
+.adp-secondSection .container .table table tbody tr td{
+    display: block;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(1),
+.adp-secondSection .container .table table tbody tr td:nth-child(2),
+.adp-secondSection .container .table table tbody tr td:nth-child(3),
+.adp-secondSection .container .table table tbody tr td:nth-child(4),
+.adp-secondSection .container .table table tbody tr td:nth-child(5),
+.adp-secondSection .container .table table tbody tr td:nth-child(6){
+    width: 100%;
+    text-align: right;
+}
+.adp-secondSection .container .table table tbody tr{
+    margin-bottom: 25px;
+    height: 600px;
+    box-shadow: unset;
+    background: #fff;
+    border: 1px solid red;
+}
+.adp-secondSection .container .table table tbody tr td{
+    box-shadow: 0px 3px 8px -8px black;
+    height: 100px;
+    padding-right: 5px;
+    padding-left: 50%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.adp-secondSection .container .table table tbody tr td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(6){
+    box-shadow: none;
+}
+}
+
+
+
+
+@media (min-width: 576px) and (max-width: 767px){
+.adp-secondSection{
+    padding: 20px 40px 100px !important;
+}
+.adp-secondSection .container .table{
+    padding: 20px 0px 20px;
+}
+.adp-secondSection .container .table table thead{
+    display: none;
+}
+.adp-secondSection .container .table table,
+.adp-secondSection .container .table table tbody,
+.adp-secondSection .container .table table tbody tr,
+.adp-secondSection .container .table table tbody tr td{
+    display: block;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(1),
+.adp-secondSection .container .table table tbody tr td:nth-child(2),
+.adp-secondSection .container .table table tbody tr td:nth-child(3),
+.adp-secondSection .container .table table tbody tr td:nth-child(4),
+.adp-secondSection .container .table table tbody tr td:nth-child(5),
+.adp-secondSection .container .table table tbody tr td:nth-child(6){
+    width: 100%;
+    text-align: right;
+}
+.adp-secondSection .container .table table tbody tr{
+    margin-bottom: 25px;
+    height: 480px;
+    box-shadow: unset;
+    background: #fff;
+    border: 1px solid red;
+}
+.adp-secondSection .container .table table tbody tr td{
+    box-shadow: 0px 3px 8px -8px black;
+    height: 80px;
+    padding-right: 5px;
+    padding-left: 50%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.adp-secondSection .container .table table tbody tr td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+.adp-secondSection .container .table table tbody tr td:nth-child(6){
+    box-shadow: none;
+}
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+.adp-secondSection{
+    padding: 40px 20px 120px !important;
+}
+.adp-secondSection .container .table{
+    padding: 10px;
+}
+}

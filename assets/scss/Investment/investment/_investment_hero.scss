@@ -1,0 +1,174 @@
+.hero-section{
+    margin-bottom: 60px;
+    padding: 0px 60px;
+}
+.hero-section h1{
+    text-align: center;
+    margin: 50px 0px 70px 0px;
+}
+.hero-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.hero-section .container .left-side-section{
+    padding: 0px 15px;
+}
+.hero-section .container .left-side-section h4{
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+.hero-section .container .left-side-section p{
+    margin-bottom: 15px;
+}
+.hero-section .container .right-side-section .boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.hero-section .container .right-side-section .boxes .box{
+    margin: 0px 15px 30px 0px;
+}
+.hero-section .container .right-side-section .boxes .box > div img{
+    width: 15%;
+}
+.hero-section .container .right-side-section .boxes .box-1 > div img{
+    width: 15%;
+    height: 24px;
+}
+.hero-section .container .right-side-section .boxes .box h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+
+// Media Queries
+@media (max-width: 575px){
+.hero-section .container .right-side-section .boxes .box{
+    margin: 0px 5px 30px 5px;
+}
+.hero-section .container .right-side-section .boxes .box h4{
+    width: 50%;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+.hero-section .container .right-side-section .boxes .box{
+    margin: 0px 10px 30px 10px;
+}
+.hero-section .container .right-side-section .boxes .box-1 > div img{
+    width: 15%;
+    height: 53px;
+}
+.hero-section .container .right-side-section .boxes .box h4{
+    width: 100%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.hero-section h1{
+    font-size: 35px;
+    margin: 50px 0px 40px 0px;
+}
+.hero-section .container .left-side-section h4{
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    line-height: 32px;
+}
+.hero-section .container .right-side-section .boxes{
+    margin-top: 25px !important;
+}
+.hero-section .container .right-side-section .boxes .box{
+    margin: 10px 20px 30px 10px;
+}
+.hero-section .container .right-side-section .boxes .box-1 > div img{
+    width: 15%;
+    height: 53px;
+}
+.hero-section .container .right-side-section .boxes .box h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 15px 0px 10px 0px;
+    width: 100%;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+.hero-section h1{
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+.hero-section .container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+.hero-section .container .left-side-section{
+    padding: 0px 20px;
+    border-right: 1px solid black;
+}
+.hero-section .container .left-side-section h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+.hero-section .container .right-side-section .boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.hero-section .container .right-side-section .boxes .box{
+    margin: 10px 20px 30px 10px;
+}
+.hero-section .container .right-side-section .boxes .box-1 > div img{
+    width: 15%;
+    height: 42px;
+}
+}
+
+// Common Media Queries
+@media (max-width: 767px){
+.hero-section{
+    margin-bottom: 40px;
+    padding: 0px 20px;
+}
+.hero-section h1{
+    font-size: 30px;
+    margin: 50px 0px 40px 0px;
+}
+.hero-section .container .left-side-section h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.hero-section .container .right-side-section .boxes .box h4{
+    font-size: 17px;
+    font-weight: normal;
+    margin: 10px 0px;
+}
+}
+
+@media (max-width: 991px){
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+}
+.hero-section .container .left-side-section{
+    padding: 0px;
+}
+.hero-section .container .right-side-section .boxes{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+.hero-section{
+    margin-bottom: 50px;
+    padding: 0px 40px;
+}
+}

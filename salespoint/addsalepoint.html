@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/scss/main.css">
+    <!-- Importing jquery cdn -->
+    <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- For addSalePoint Jquery Files -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <!-- Nav Section Start -->
+    <nav class="ai-nav as-nav">
+        <div class="nav-bar">
+            <div class="logo">
+                <h3>Rozgar.</h3>
+            </div>
+            <div class="logo-front">
+                <p><a href="#">Investment</a></p>
+                <p><a href="#">Salepoint</a></p>
+                <form action="" method="get">
+                    <select name="investment" id="investment">
+                      <option value="volvo">Add</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="addsp-contactSection common-section">
+        <div class="container">
+            <form method="get">
+                <h5>Add New Sale Point</h5>
+                <div class="form-rows">
+                    <div class="row-item">
+                        <label for="name">Sale Point Name</label>
+                        <input type="text" id="name" required name="sale-point-name">
+                    </div>
+                    <div class="row-item">
+                        <label for="name">Owner Name</label>
+                        <input type="text" id="name" required name="owner-name">
+                    </div>
+                    <div class="row-item row-item-email">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required name="email">
+                    </div>
+                    <div class="row-item">
+                        <label for="investor">Investor <span id="investorDownArrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="17" height="17" viewBox="0 0 511.000000 275.000000" preserveAspectRatio="xMidYMid meet">
+
+                            <g transform="translate(0.000000,275.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                            <path d="M3760 1635 c-1162 -1162 -1109 -1114 -1211 -1102 -27 3 -63 13 -81 22 -18 10 -511 495 -1096 1078 l-1062 1062 -150 -150 -150 -150 1087 -1086 1088 -1087 85 -41 c222 -108 475 -90 672 48 60 41 2162 2147 2166 2168 2 12 -48 68 -140 160 l-143 143 -1065 -1065z"/>
+                            </g>
+                            </svg></span></label>
+                        <input type="text" id="investor" required placeholder="Choose Investor" name="investor">
+                    </div>
+                    <div class="row-item">
+                        <label for="number">Investor Share</label>
+                        <input type="text" id="number" required name="investor share">
+                    </div>
+                    <div class="row-item">
+                        <label for="production">Production House <span id="productionHouseDownArrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="17" height="17" viewBox="0 0 511.000000 275.000000" preserveAspectRatio="xMidYMid meet">
+
+                            <g transform="translate(0.000000,275.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                            <path d="M3760 1635 c-1162 -1162 -1109 -1114 -1211 -1102 -27 3 -63 13 -81 22 -18 10 -511 495 -1096 1078 l-1062 1062 -150 -150 -150 -150 1087 -1086 1088 -1087 85 -41 c222 -108 475 -90 672 48 60 41 2162 2147 2166 2168 2 12 -48 68 -140 160 l-143 143 -1065 -1065z"/>
+                            </g>
+                            </svg></span></label>
+                        <input type="text" id="production" required placeholder="Choose Production" name="production-house">
+                    </div>
+                </div>
+                <div class="btn"><button onclick="window.location.href='./admin-salepoint.html';">Add Sale Point</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+    <script src="../assets/js/salePoint/addSalePoint/investor.js"></script>
+    <script src="../assets/js/salePoint/addSalePoint/productionHouse.js"></script>
+</body>
+</html>

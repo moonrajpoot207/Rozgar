@@ -1,0 +1,148 @@
+.third-section{
+    background: #fafafa;
+    padding: 25px 80px;
+}
+.third-section .container h2{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.third-section .container h5{
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin:  20px 0px 2px 20px;
+}
+.third-section .container .table{
+    padding: 0px;
+}
+.third-section .container thead tr th:nth-child(1){
+    color: #111;
+    text-align: center;
+    font-weight: normal;
+}
+.third-section .container tbody tr td:nth-child(1){
+    width: 5%;
+    font-size: 16px;
+    text-align: center;
+}
+.third-section .container tbody tr td:nth-child(2){
+    width: 15%;
+}
+.third-section .container tbody tr td p{
+    font-size: 14px;
+}
+.third-section .container tbody tr td p:nth-child(2){
+    font-size: 13px;
+}
+.third-section .container tbody tr td:nth-child(3){
+    width: 26%;
+    font-size: 14px;
+}
+.third-section .container tbody tr td:nth-child(4){
+    width: 42%;
+    font-size: 14px;
+}
+.third-section .container tbody tr td:nth-child(4) a{
+    text-decoration: underline;
+    color: #407bf1;
+    &:hover{
+    color: red;
+    transition: all 0.3s ease;
+    }
+}
+.third-section .container tbody tr td:nth-child(5){
+    width: 12%;
+    text-align: center;
+}
+.third-section .container tbody .btn button{
+    padding: 4px 8px;
+    border-radius: 2px;
+    border: 1px solid #fbd6d6;
+    color: #e71c1c;
+    font-size: 13px;
+    &:hover{
+    color: #fbd6d6;
+    background: #e71c1c;
+    transition: all 0.3s ease;
+    }
+}
+
+// Media Queries
+@media (max-width: 575px){
+.third-section{
+    padding: 25px 20px !important;
+    overflow: hidden;
+}
+.third-section .container table tbody tr{
+    height: 500px;
+}
+.third-section .container table tbody tr td{
+    height: 100px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 991px){
+.third-section{
+    padding: 25px 50px;
+}
+.third-section .container table tbody tr{
+    height: 300px;
+}
+.third-section .container table tbody tr td{
+    height: 60px;
+}
+}
+
+// Common Media Queries
+@media (max-width: 991px){
+.third-section .container h5{
+    margin:  20px 0px 5px 20px;
+}
+.third-section .container table thead{
+    display: none;
+}
+.third-section .container table,
+.third-section .container table tbody,
+.third-section .container table tbody tr,
+.third-section .container table tbody tr td{
+    display: block;
+}
+.third-section .container table tbody tr{
+    margin-bottom: 25px;
+    box-shadow: unset;
+    background: #fff;
+    border: 0.5px solid red;
+    border-radius: 5px;
+}
+.third-section .container table tbody tr td{
+    box-shadow: 0px 3px 8px -8px black;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.third-section .container table tbody tr td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+.third-section .container tbody tr td:nth-child(1),
+.third-section .container tbody tr td:nth-child(2),
+.third-section .container tbody tr td:nth-child(3),
+.third-section .container tbody tr td:nth-child(4),
+.third-section .container tbody tr td:nth-child(5){
+    width: 100%;
+}
+.third-section .container tbody tr td:nth-child(5){
+    box-shadow: none;
+}
+}

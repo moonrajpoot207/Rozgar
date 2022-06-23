@@ -1,0 +1,45 @@
+.db-nav .nav-bar{
+    display: flex;
+    place-content: end;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 45%;
+}
+.db-nav .nav-bar .btn .button-2{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #9e9e9e;
+    color: #111;
+    font-size: 13px;
+    &:hover{
+    background-color: #e6e6e6;
+    border: 1px solid #adadad;
+    }
+}
+.db-nav .nav-bar .btn .button-2 span svg{
+    margin-right: 5px;
+}
+
+@media (max-width: 767px){
+.db-nav{
+    padding: 10px 10px;
+    width: 100%;
+}
+.db-nav .nav-bar{
+    display: block;
+    padding-left: 0;
+}
+.db-nav .nav-bar h3{
+    text-align: left;
+}
+.db-nav .nav-bar .btn{
+    margin-top: 20px;
+    text-align: end;
+}
+.db-nav .nav-bar .btn .button-2{
+    display: inline-block;
+    margin-right: 0px;
+}
+}
